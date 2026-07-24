@@ -1,0 +1,35 @@
+{
+  "$comment": "Canonical Hanzo first-party download catalog. ONE source of truth consumed by hanzo.chat, hanzo.app, hanzo.ai (and any Hanzo surface). Desktop release assets resolve against github.com/hanzoai/desktop/releases/latest; the version is filled dynamically from api.hanzo.ai/v1/releases at render time (see index.mjs resolveLatest).",
+  "desktop": [
+    { "id": "mac-arm", "platform": "macos", "arch": "arm64", "label": "Download for Apple Silicon", "ext": "dmg", "href": "https://github.com/hanzoai/desktop/releases/latest/download/Hanzo-arm64.dmg" },
+    { "id": "mac-intel", "platform": "macos", "arch": "x64", "label": "Download for Intel Mac", "ext": "dmg", "href": "https://github.com/hanzoai/desktop/releases/latest/download/Hanzo-x64.dmg" },
+    { "id": "windows", "platform": "windows", "arch": "x64", "label": "Download for Windows", "ext": "exe", "href": "https://github.com/hanzoai/desktop/releases/latest/download/Hanzo-Setup.exe" },
+    { "id": "linux-appimage", "platform": "linux", "arch": "x64", "label": "AppImage", "ext": "AppImage", "href": "https://github.com/hanzoai/desktop/releases/latest/download/Hanzo.AppImage" },
+    { "id": "linux-deb", "platform": "linux", "arch": "x64", "label": ".deb", "ext": "deb", "href": "https://github.com/hanzoai/desktop/releases/latest/download/hanzo.deb" }
+  ],
+  "mobile": [
+    { "id": "ios", "platform": "ios", "label": "App Store", "href": "https://apps.apple.com/app/hanzo-ai/id6478000000" },
+    { "id": "android", "platform": "android", "label": "Google Play", "href": "https://play.google.com/store/apps/details?id=ai.hanzo.app" }
+  ],
+  "extensions": [
+    { "id": "chrome", "browser": "Chrome", "href": "https://chrome.google.com/webstore/detail/hanzo-ai" },
+    { "id": "edge", "browser": "Edge", "href": "https://microsoftedge.microsoft.com/addons/detail/hanzo-ai" },
+    { "id": "firefox", "browser": "Firefox", "href": "https://addons.mozilla.org/addon/hanzo-ai" },
+    { "id": "safari", "browser": "Safari", "href": "https://apps.apple.com/app/hanzo-ai" }
+  ],
+  "editors": [
+    { "id": "vscode", "editor": "VS Code", "href": "https://marketplace.visualstudio.com/items?itemName=hanzo-ai.hanzo-ai" },
+    { "id": "cursor", "editor": "Cursor", "href": "https://open-vsx.org/namespace/hanzo-ai" },
+    { "id": "jetbrains", "editor": "JetBrains", "href": "https://plugins.jetbrains.com/plugin/hanzo-ai" }
+  ],
+  "cli": [
+    { "id": "curl", "label": "Install script", "command": "curl -fsSL https://hanzo.ai/install.sh | sh" },
+    { "id": "brew", "label": "Homebrew", "command": "brew install hanzoai/tap/hanzo" },
+    { "id": "npm", "label": "npm", "command": "npm i -g @hanzo/cli" }
+  ],
+  "sdks": [
+    { "id": "python", "label": "Python", "command": "pip install hanzoai" },
+    { "id": "node", "label": "TypeScript / Node", "command": "npm i @hanzo/ai" },
+    { "id": "go", "label": "Go", "command": "go get github.com/hanzoai/hanzo-go" }
+  ]
+}
