@@ -1,0 +1,35 @@
+{
+  "name": "@hanzo/downloads",
+  "version": "1.0.0",
+  "description": "Canonical Hanzo download + install catalog — the ONE source of truth for every download link (desktop, mobile, browser, editors, CLI, SDKs) and every integration. Data-first, framework-agnostic, api.hanzo.ai-aware.",
+  "type": "module",
+  "main": "index.mjs",
+  "types": "./index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs"
+    },
+    "./downloads.json": "./downloads.json",
+    "./integrations.json": "./integrations.json"
+  },
+  "files": [
+    "index.mjs",
+    "index.d.ts",
+    "downloads.json",
+    "integrations.json",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": ["hanzo", "download", "install", "catalog"],
+  "repository": { "type": "git", "url": "https://github.com/hanzoai/download" },
+  "homepage": "https://hanzo.ai/download",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$comment": "Canonical Hanzo integrations / install catalog — third-party surfaces Hanzo plugs into (the /install page). action=install (add Hanzo to that surface) or connect (link that service to Hanzo). ONE source consumed everywhere.",
+  "categories": [
+    { "id": "browser", "label": "Browser extensions" },
+    { "id": "editors", "label": "IDEs & editors" },
+    { "id": "office", "label": "Office" },
+    { "id": "design", "label": "Design" },
+    { "id": "team", "label": "Team apps" },
+    { "id": "business", "label": "Business" },
+    { "id": "developer", "label": "Developer" },
+    { "id": "productivity", "label": "Productivity" }
+  ],
+  "items": [
+    { "id": "chrome", "name": "Chrome", "category": "browser", "action": "install", "href": "https://chrome.google.com/webstore/detail/hanzo-ai", "blurb": "Ask Hanzo about any page, capture context, and run agents from the toolbar." },
+    { "id": "edge", "name": "Edge", "category": "browser", "action": "install", "href": "https://microsoftedge.microsoft.com/addons/detail/hanzo-ai", "blurb": "The full Hanzo assistant for Microsoft Edge." },
+    { "id": "firefox", "name": "Firefox", "category": "browser", "action": "install", "href": "https://addons.mozilla.org/addon/hanzo-ai", "blurb": "Privacy-first Hanzo add-on for Firefox." },
+    { "id": "safari", "name": "Safari", "category": "browser", "action": "install", "href": "https://apps.apple.com/app/hanzo-ai", "blurb": "Native Hanzo extension for Safari on macOS and iOS." },
+    { "id": "vscode", "name": "VS Code", "category": "editors", "action": "install", "href": "https://marketplace.visualstudio.com/items?itemName=hanzo-ai.hanzo-ai", "blurb": "Inline completions, chat, and agentic edits in VS Code." },
+    { "id": "cursor", "name": "Cursor", "category": "editors", "action": "install", "href": "https://open-vsx.org/namespace/hanzo-ai", "blurb": "Hanzo models and MCP tools in the Cursor editor." },
+    { "id": "jetbrains", "name": "JetBrains", "category": "editors", "action": "install", "href": "https://plugins.jetbrains.com/plugin/hanzo-ai", "blurb": "One plugin for IntelliJ, PyCharm, GoLand, WebStorm, and the rest." },
+    { "id": "office", "name": "Word, Excel & PowerPoint", "category": "office", "action": "install", "href": "https://hanzo.ai/office", "blurb": "Draft, analyze, and generate slides with Hanzo inside Microsoft Office." },
+    { "id": "outlook", "name": "Outlook", "category": "office", "action": "install", "href": "https://hanzo.ai/office", "blurb": "Summarize threads and draft replies in Outlook." },
+    { "id": "figma", "name": "Figma", "category": "design", "action": "install", "href": "https://www.figma.com/community/plugin/hanzo-ai", "blurb": "Generate copy, components, and specs inside Figma." },
+    { "id": "teams", "name": "Microsoft Teams", "category": "team", "action": "install", "href": "https://hanzo.ai/teams", "blurb": "Chat with Hanzo and run agents without leaving Teams." },
+    { "id": "slack", "name": "Slack", "category": "team", "action": "connect", "href": "https://hanzo.ai/slack", "blurb": "Summarize channels, answer in-thread, and run agents from Slack." },
+    { "id": "salesforce", "name": "Salesforce", "category": "business", "action": "connect", "href": "https://hanzo.ai/connect/salesforce", "blurb": "Enrich records and automate CRM workflows." },
+    { "id": "notion", "name": "Notion", "category": "business", "action": "connect", "href": "https://hanzo.ai/connect/notion", "blurb": "Query and update your Notion workspace from any Hanzo surface." },
+    { "id": "github", "name": "GitHub", "category": "developer", "action": "connect", "href": "https://hanzo.ai/connect/github", "blurb": "Review PRs, triage issues, and ship code with Hanzo agents." },
+    { "id": "gitlab", "name": "GitLab", "category": "developer", "action": "connect", "href": "https://hanzo.ai/connect/gitlab", "blurb": "Automate merge requests and CI workflows in GitLab." },
+    { "id": "gworkspace", "name": "Google Workspace", "category": "productivity", "action": "connect", "href": "https://hanzo.ai/connect/google", "blurb": "Gmail, Docs, Sheets, and Calendar connected to Hanzo." }
+  ]
+}
